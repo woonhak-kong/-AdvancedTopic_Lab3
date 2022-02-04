@@ -25,6 +25,11 @@ public class PlayerController : MonoBehaviour
             CommandManager.Instance.Execute(new MoveRightCommand(transform));
         }
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            CommandManager.Instance.Execute(new ColorCommand(gameObject, new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f))));
+        }
+
 
         if (Input.GetKeyDown(KeyCode.R))
         {
