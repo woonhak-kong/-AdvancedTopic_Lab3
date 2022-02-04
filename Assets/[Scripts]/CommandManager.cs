@@ -30,9 +30,9 @@ public class CommandManager : MonoBehaviour
 
     public void Undo()
     {
-        _commands.Pop().Undo();
+        if (_commands.Count > 0)
+        { 
+            _commands.Pop().Undo();
+        }
     }
-
-
-
 }

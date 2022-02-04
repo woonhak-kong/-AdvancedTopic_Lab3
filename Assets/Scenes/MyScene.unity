@@ -202,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96399886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.01, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -264,11 +264,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 96399886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3955d9ede1b9a984684af25415a9fe1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 963678f3d0fcb5e4f9f29283fc2cd591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  Speed: 10
 --- !u!1 &155307671
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,8 +426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 186, y: -52.4}
-  m_SizeDelta: {x: 354.6328, y: 89.6367}
+  m_AnchoredPosition: {x: 188.89056, y: -65.53885}
+  m_SizeDelta: {x: 360.4139, y: 115.9144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770071882
 MonoBehaviour:
@@ -466,7 +464,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Movement: Arrow Key
 
-    Change Color: ''C'''
+    Change Color: ''C''
+
+    Undo : ''R'''
 --- !u!222 &770071883
 CanvasRenderer:
   m_ObjectHideFlags: 0
