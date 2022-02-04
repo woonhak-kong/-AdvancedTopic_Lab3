@@ -28,6 +28,11 @@ public class CommandManager : MonoBehaviour
         _commands.Push(command);
     }
 
+    public void ExecuteWithoutSave(ICommand command)
+    {
+        command.Execute();
+    }
+
     public void Undo()
     {
         if (_commands.Count > 0)

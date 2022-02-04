@@ -13,15 +13,13 @@ public class ColorCommand : ICommand
         _color = color;
     }
 
-    public bool Execute()
+    public void Execute()
     {
         _gameObject.GetComponent<Renderer>().material.color = _color;
-        return true;
     }
 
-    public bool Undo()
+    public void Undo()
     {
         // don't need to undo
-        return false;
     }
 }

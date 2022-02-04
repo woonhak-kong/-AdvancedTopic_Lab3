@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.C))
         {
-            CommandManager.Instance.Execute(new ColorCommand(gameObject, new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f))));
+            CommandManager.Instance.ExecuteWithoutSave(new ColorCommand(gameObject, new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f))));
         }
 
 
